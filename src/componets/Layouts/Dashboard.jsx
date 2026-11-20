@@ -9,10 +9,10 @@ export default function Dashboard() {
 
             <Sidebar />
 
-            <div className="flex-1 flex flex-col">
+            <div className="flex-1  flex flex-col">
                 <Topbar />
 
-                <main className="p-5 flex-1">
+                <main className="p-5 flex-1 h-screen bg-slate-200">
                     <Outlet />
                 </main>
 

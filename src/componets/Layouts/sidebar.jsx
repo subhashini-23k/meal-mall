@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 export const Sidebar = () => {
   return (
-    <div className="bg-slate-800 w-64 min-h-screen p-5">
+    <div className="bg-slate-800 w-64 min-h-screen p-5 fixed z-10">
 
       {/* Logo Section */}
       <div className="flex items-center gap-3 mb-10">
@@ -37,7 +37,7 @@ export const Sidebar = () => {
         </NavLink>
 
         <NavLink
-          to="/meal-card"
+          to="/meal-list"
           className={({ isActive }) =>
             `flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition ${
               isActive
