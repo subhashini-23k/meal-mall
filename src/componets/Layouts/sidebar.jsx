@@ -1,6 +1,7 @@
 
 import Logo from "../../assets/icons/logo.webp";
 import { NavLink } from "react-router-dom";
+import { LayoutDashboard, Utensils, PlusCircle, ChevronRight ,ChevronLeft } from "lucide-react";
 
 export const Sidebar = () => {
   return (
@@ -11,12 +12,13 @@ export const Sidebar = () => {
         <img
           src={Logo}
           alt="Meal Mall Logo"
-          className="w-20 h-20 rounded-lg"
-        />
-
-        <h1 className="text-white text-2xl font-bold">
+          className="w-15 h-15 rounded-lg"
+        /><h1 className="text-white text-2xl font-bold">
           Meal Mall
         </h1>
+      </div>
+      <div className="absolute right-0 top-25 bg-slate-900 p-1 rounded-full border-1 border-white">
+        <ChevronRight color="white" size={15} className="cursor-pointer"/>
       </div>
 
       {/* Navigation Links */}
@@ -32,8 +34,8 @@ export const Sidebar = () => {
             }`
           }
         >
-          <span>📊</span>
-          Dashboard
+         <LayoutDashboard size={20} />
+        Dashboard
         </NavLink>
 
         <NavLink
@@ -46,7 +48,7 @@ export const Sidebar = () => {
             }`
           }
         >
-          <span>🍽️</span>
+         <Utensils size={20} />
           Meal Card
         </NavLink>
 
@@ -60,8 +62,8 @@ export const Sidebar = () => {
             }`
           }
         >
-          <span>➕</span>
-          Meal Create
+          <PlusCircle size={20} />
+          Create Meal
         </NavLink>
 
       </nav>
